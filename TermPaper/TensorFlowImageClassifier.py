@@ -222,10 +222,10 @@ for x in range(len(test_sub_dirs)):
 		for s_p in sub_pred:
 			new_set.add(s_p)
 		indexer += 1
-		pixel_y += 1
-		if pixel_y == tmp_test_height:
-			pixel_x += 1
-			pixel_y = 0
+		pixel_x += 1
+		if pixel_x == tmp_test_width:
+			pixel_y += 1
+			pixel_x = 0
 	#actual_predictions = np.array(actual_predictions)
 	#print "Prediction-Shape:", actual_predictions.shape
 	print "Img size:", tmp_img.size

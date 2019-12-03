@@ -92,7 +92,7 @@ for img_index in range(len(test_sub_dirs)):
 	#sys.exit()
 	print test_sub_dirs
 	print img_index
-	print "Pred-"+test_sub_dirs[img_index].split(".")[0]+"-neuralnetwork.png"
-	plt.savefig("Pred-"+test_sub_dirs[img_index].split(".")[0]+"-neuralnetwork.png")
+	print "Pred-"+test_sub_dirs[img_index].split(".")[0]+"-patternmatcher.png"
+	plt.savefig("Pred-"+test_sub_dirs[img_index].split(".")[0]+"-patternmatcher.png")
 
 
