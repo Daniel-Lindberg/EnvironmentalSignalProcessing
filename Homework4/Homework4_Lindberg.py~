@@ -162,7 +162,7 @@ for sub_cov in original_covariances:
 	plt.savefig(original_images_dir+original_finalized_list[indexer].split(".")[0]+"_RGB_UTIL.png")
 	indexer +=1
 
-
+"""
 print "Starting part 6"
 
 dtrain_train_data = np.array([])
@@ -220,7 +220,7 @@ xgb.plot_tree(bst, num_trees=3)
 plt.savefig("HMI_TREE.png")
 
 bst.__del__()
-
+"""
 
 print "Starting part 6"
 
@@ -247,7 +247,7 @@ for x in range(dtrain_train_data2.shape[0]):
 for x in range(dtrain_label_data2.shape[0]):
 	for y in range(dtrain_label_data2.shape[1]):
 		new_label2[x,y] = sum(dtrain_label_data2[x,y])/3
-dtrain2 = xgb.DMatrix(new_train2, label=new_label)
+dtrain2 = xgb.DMatrix(new_train2, label=new_label2)
 dtrain2.save_binary('train2.buffer')
 
 plt.figure()
